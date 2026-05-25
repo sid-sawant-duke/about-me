@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Sid Sawant</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡️</text></svg>" />
+<meta name="viewport" content="width=1440" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,400;10..48,500;10..48,600;10..48,700;10..48,800&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="page density-regular">
+
+  <!-- ─── Masthead ─────────────────────────────────────────── -->
+  <header class="mast">
+    <div class="mast-top">
+      <div class="mast-left">
+        <div class="chip ink">ISSUE №01</div>
+        <div class="chip">PERSONAL DOSSIER</div>
+        <div class="chip acid">VOL · MMXXVI</div>
+      </div>
+      <div class="mast-right">
+        <span class="mono mast-meta">DURHAM → ATL → ?</span>
+        <span class="mono mast-meta">·</span>
+        <span class="mono mast-meta" id="mast-date">FRI · 24 · MAY · 2026</span>
+        <span class="mono mast-meta">·</span>
+        <span class="mono mast-meta">52°F / CLEAR</span>
+      </div>
+    </div>
+
+    <div class="rule-thick"></div>
+
+    <div class="mast-name-row">
+      <div class="mast-name-col">
+        <div class="mast-kicker mono">↳ THE PERSONAL DOSSIER OF</div>
+        <h1 class="mast-name display"><span>SIDDHESH</span> <span class="name-alt">SAWANT</span></h1>
+        <div class="mast-tag mono">BUILDER · STORYTELLER · DUKE 26’</div>
+      </div>
+
+      <div class="mast-logo">
+        <!-- original mark, not copying any publication's logo -->
+        <svg viewBox="0 0 220 220" width="180" height="180" aria-label="dossier mark">
+          <circle cx="110" cy="110" r="104" fill="var(--ink)" />
+          <circle cx="110" cy="110" r="104" fill="none" stroke="var(--ink)" stroke-width="3" />
+          <text x="110" y="62" text-anchor="middle" font-family="JetBrains Mono" font-size="12" font-weight="700" fill="var(--paper)" letter-spacing="2">PERSONAL · DOSSIER</text>
+          <text x="110" y="138" text-anchor="middle" font-family="Bricolage Grotesque" font-size="86" font-weight="800" fill="var(--acid)" letter-spacing="-4">PD</text>
+          <text x="110" y="172" text-anchor="middle" font-family="JetBrains Mono" font-size="11" font-weight="700" fill="var(--paper)" letter-spacing="3">№ 01 · 2026</text>
+          <path d="M40 110 H 70 M150 110 H 180" stroke="var(--paper)" stroke-width="2" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="rule"></div>
+  </header>
+
+  <!-- ─── Top ticker ───────────────────────────────────────── -->
+  <div class="tk-wrap tk-acid"><div class="tk-track" data-ticker="top" data-speed="38"></div></div>
+
+  <!-- ─── Hero ─────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="hero-photo">
+      <img src="assets/grad-photo.png" alt="portrait" />
+
+      <div class="sticker" style="transform: translate(-20px, -22px) rotate(-9deg); width: 108px; height: 108px; background: var(--acid); position: absolute; top: 0; right: 0;">
+        <div class="sticker-inner">
+          <div class="st-line mono">CLASS</div>
+          <div class="st-line display st-big">26</div>
+          <div class="st-line mono">DUKE</div>
+        </div>
+      </div>
+
+      <div class="sticker" style="transform: translate(20px, 20px) rotate(6deg); width: 96px; height: 96px; background: var(--hot); position: absolute; bottom: 14px; left: -14px;">
+        <div class="sticker-inner">
+          <div class="st-line mono" style="color: var(--paper-2)">FIELD</div>
+          <div class="st-line display st-big" style="color: var(--paper-2)">NOTES</div>
+          <div class="st-line mono" style="color: var(--paper-2)">VOL.01</div>
+        </div>
+      </div>
+
+      <div class="hero-caption mono">
+        <span>FIG. 01 · WALLACE WADE STADIUM · 11 MAY 26 · F2.8 · 1/250</span>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <div class="hero-kicker">
+        <span class="chip acid">↳ THE LEDE</span>
+        <span class="mono hero-readtime">02 MIN READ · 680 WORDS</span>
+      </div>
+
+      <h2 class="hero-headline">
+        <span class="display hl-1">Trained to think like an</span>
+        <span class="display hl-2 serif-i" style="font-style: italic">engineer</span>,
+        <span class="display hl-1">paid to talk like a</span>
+        <span class="hl-mark">marketer</span>,
+        <span class="display hl-1">doing both when</span>
+        <span class="display hl-3" style="color: var(--hot)">nobody’s</span>
+        <span class="display hl-1">looking.</span>
+      </h2>
+
+      <div class="hero-meta">
+        <div class="hero-meta-row">
+          <div class="hero-byline mono">
+            <div><b>WORDS BY</b> SIDDHESH SAWANT</div>
+            <div><b>FILED FROM</b> ATLANTA, GA</div>
+            <div><b>PUBLISHED</b> <span id="pub-stamp">24.05.26 · 09:14 ET</span></div>
+          </div>
+          <div class="hero-socials">
+            <a class="soc-chip mono" href="https://www.linkedin.com/in/sid-sawant" target="_blank" rel="noopener noreferrer">LI <svg width="11" height="11" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+            <a class="soc-chip mono" href="https://github.com/sid-sawant-duke" target="_blank" rel="noopener noreferrer">GH <svg width="11" height="11" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+            <a class="soc-chip mono" href="https://drive.google.com/file/d/1DiDUibhdq56UatKNfCkZRAwMy7WjL2_g/view?usp=sharing" target="_blank" rel="noopener noreferrer">CV <svg width="11" height="11" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+            <a class="soc-chip mono" href="mailto:siddhesh.sawant.duke@gmail.com">@ <svg width="11" height="11" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+          </div>
+        </div>
+        <div class="hero-also serif-i">
+          Also: <span style="text-decoration: underline">speaks Japanese</span>, owns too much LEGO, has opinions about both.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── Band rule ────────────────────────────────────────── -->
+  <div class="band-rule">
+    <div class="rule-thick"></div>
+    <div class="band-meta mono">
+      <span>↳ THIS ISSUE</span>
+      <span>FEATURE · COVER · INDEX · MARGINALIA · COLOPHON</span>
+      <span>06 SECTIONS</span>
+    </div>
+    <div class="rule"></div>
+  </div>
+
+  <!-- ─── Story grid ───────────────────────────────────────── -->
+  <section class="grid">
+
+    <div class="grid-col grid-col-left">
+
+    <!-- Feature -->
+    <div class="g-col g-feat">
+      <article class="story story-feature">
+        <div class="story-hd">
+          <div class="story-rail">
+            <span class="chip ink">FEATURE · 01</span>
+            <span class="mono story-tag">DEEP READ</span>
+          </div>
+          <div class="story-num display">01</div>
+        </div>
+
+        <h3 class="story-title display">
+          Two years at <span class="serif-i" style="font-style: italic">Duke</span>, told in fragments
+        </h3>
+
+        <div class="story-sub mono">
+          How an accidental all-nighter turned a marketing degree into a habit.
+        </div>
+
+        <div class="story-cols">
+          <p class="col">
+            <span class="dropcap">M</span>aster of Engineering Management, class of 2026. Came in from a job that was technically project management and practically translation. Three iOS products, 65 million users, one bilingual seat in the middle turning engineering specs into something a Japanese enterprise client would actually buy. The work was marketing in everything but title. The MEM was the part where I admitted it.
+          </p>
+          <p class="col">
+            The pivot to the title happened in the worst possible way. A marketing group project, day before the presentation, and the deliverable suddenly became one person’s job. Pulled an all-nighter, gave a presentation that was passable at best, and somewhere around 4 a.m. figured out that the case study was actually interesting. That was the moment marketing stopped being a foreign language. Took over the Duke MEM social media account a few months later and watched the numbers move past anything the account had done before.
+          </p>
+        </div>
+
+        <div class="story-foot">
+          <div class="story-foot-l mono">
+            <span class="chip acid flat">▸ ESSAY</span>
+            <span>2 THREADS · 1 PIVOT · 1 ALL-NIGHTER</span>
+          </div>
+          <a class="story-foot-r mono" href="#">CONTINUE TO P.02 <svg width="14" height="14" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Index -->
+    <div class="g-col g-idx">
+      <article class="story story-index">
+        <div class="story-hd">
+          <div class="story-rail">
+            <span class="chip acid">INDEX · CASE STUDIES</span>
+            <span class="mono story-tag">04 ENTRIES · 24–26</span>
+          </div>
+          <div class="story-num display" style="color: var(--ink)">03</div>
+        </div>
+
+        <h3 class="story-title display">
+          Selected work, <span class="serif-i" style="font-style: italic">’24–’26</span>
+        </h3>
+
+        <ul class="idx-list">
+          <li class="idx-row">
+            <span class="idx-n mono">01</span>
+            <span class="idx-t display">LEGO: One Brand, Two Companies<span class="idx-tag">[cx]</span></span>
+            <a class="idx-p mono" href="https://drive.google.com/file/d/1AOVa8zlIFA8B98i8y9zAXbvupJd7R6Db/view?usp=sharing" target="_blank" rel="noopener noreferrer">p.04 <svg width="10" height="10" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+            <span class="idx-d">The experience gap where the store feels like a playground and the website feels like a tax return.</span>
+          </li>
+          <li class="idx-row">
+            <span class="idx-n mono">02</span>
+            <span class="idx-t display">MIRRA: Try Everything, Change Nothing<span class="idx-tag">[cx]</span></span>
+            <a class="idx-p mono" href="https://drive.google.com/file/d/16LuADBgCCJ58ypOYtoD0fUy1otd5s01E/view?usp=sharing" target="_blank" rel="noopener noreferrer">p.07 <svg width="10" height="10" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+            <span class="idx-d">A fitting room without the fitting room, built to fix fashion’s 550-billion-dollar return problem.</span>
+          </li>
+          <li class="idx-row">
+            <span class="idx-n mono">03</span>
+            <span class="idx-t display">ARC Recovery Center<span class="idx-tag">[mktg]</span></span>
+            <a class="idx-p mono" href="https://drive.google.com/file/d/1iVgnhs18VrDhtR1-_MfpaQfMovFg9hLO/view?usp=sharing" target="_blank" rel="noopener noreferrer">p.10 <svg width="10" height="10" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+            <span class="idx-d">Hyperbaric chambers, cold plunges, and a 21-month break-even. The playbook for turning a wellness lounge into a real business.</span>
+          </li>
+          <li class="idx-row">
+            <span class="idx-n mono">04</span>
+            <span class="idx-t display">Boston Dynamics<span class="idx-tag">[strat]</span></span>
+            <a class="idx-p mono" href="https://drive.google.com/file/d/1E5xfJk4JEYl3ezQWcKyuviB6I4UUYBKB/view?usp=sharing" target="_blank" rel="noopener noreferrer">p.13 <svg width="10" height="10" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+            <span class="idx-d">How the company that taught robots to dance plans to survive Tesla, Beijing, and its own balance sheet.</span>
+          </li>
+        </ul>
+
+        <div class="story-foot">
+          <div class="story-foot-l mono">
+            <span class="chip ink flat">SEE ALL</span>
+            <span>↳ MORE CASE STUDIES IN ARCHIVE</span>
+          </div>
+          <a class="story-foot-r mono" href="#">OPEN INDEX <svg width="14" height="14" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    </div><!-- /grid-col-left -->
+
+    <div class="grid-col grid-col-right">
+
+    <!-- Cover -->
+    <div class="g-col g-cover">
+      <article class="story story-cover">
+        <div class="story-hd">
+          <div class="story-rail">
+            <span class="chip cool">COVER STORY</span>
+            <span class="mono story-tag" style="color: var(--paper-2)">’25</span>
+          </div>
+          <div class="story-num display" style="color: var(--acid)">02</div>
+        </div>
+
+        <h3 class="story-title display" style="color: var(--paper-2)">
+          Inside my year at <span class="serif-i" style="font-style: italic; color: var(--acid)">SAP</span>.
+        </h3>
+
+        <p class="story-body" style="color: var(--paper-3)">
+          Product Marketing at Finance &amp; Spend Management. Noticed 62,000 customer reviews piling up across two product lines and nobody systematically reading them. Built the tool that would. Presented to the CMO twice. The unexpected part was what happened next.
+        </p>
+
+        <div class="cover-keystats">
+          <div class="kstat"><div class="kstat-num display">62K</div><div class="kstat-lbl mono">REVIEWS READ</div></div>
+          <div class="kstat"><div class="kstat-num display">$600K</div><div class="kstat-lbl mono">UNLOCKED</div></div>
+          <div class="kstat"><div class="kstat-num display" style="color: var(--hot)">4.4</div><div class="kstat-lbl mono">GARTNER LIFT</div></div>
+        </div>
+
+        <div class="story-foot dark">
+          <div class="story-foot-l mono" style="color: var(--paper-3)">
+            <span class="chip acid flat">↗</span> <a href="https://github.com/sid-sawant-duke" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none">github.com/sid-sawant-duke</a>
+          </div>
+          <a class="story-foot-r mono" href="#" style="color: var(--paper-2)">Check out Project IRIS <svg width="14" height="14" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg></a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Marginalia -->
+    <div class="g-col g-mg">
+      <article class="story story-margin">
+        <div class="story-hd">
+          <div class="story-rail">
+            <span class="chip hot">MARGINALIA</span>
+            <span class="mono story-tag">SIDE PROJECTS &amp; OBSESSIONS</span>
+          </div>
+        </div>
+        <h3 class="story-title display">
+          &amp; other <span class="serif-i" style="font-style: italic">obsessions</span>
+        </h3>
+        <ul class="mg-list">
+          <li class="mg-row">
+            <div class="mg-l">
+              <span class="mg-n display">01</span>
+              <div>
+                <div class="mg-t">
+                  <span class="serif-i" style="font-style: italic; font-size: 1.05em">8-bit Pokémon learning game</span>
+                  <span class="mg-year mono"> · ’26</span>
+                </div>
+                <div class="mg-d mono">a teaching tool dressed as a Game Boy cartridge, currently in progress</div>
+              </div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg>
+          </li>
+          <li class="mg-row">
+            <div class="mg-l">
+              <span class="mg-n display">02</span>
+              <div>
+                <div class="mg-t">
+                  <span class="serif-i" style="font-style: italic; font-size: 1.05em">Local transcriber</span>
+                  <span class="mg-year mono"> · ’25</span>
+                </div>
+                <div class="mg-d mono">Whisper on your laptop. No cloud, no upload, no questions.</div>
+              </div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg>
+          </li>
+          <li class="mg-row">
+            <div class="mg-l">
+              <span class="mg-n display">03</span>
+              <div>
+                <div class="mg-t">
+                  <span class="serif-i" style="font-style: italic; font-size: 1.05em">Nikon Japan reel</span>
+                  <span class="mg-year mono"> · ’24</span>
+                </div>
+                <div class="mg-d mono">directed, shot, and cut a brand spot for Nikon Japan</div>
+              </div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg>
+          </li>
+          <li class="mg-row">
+            <div class="mg-l">
+              <span class="mg-n display">04</span>
+              <div>
+                <div class="mg-t">
+                  <span class="serif-i" style="font-style: italic; font-size: 1.05em">LEGO Tallneck (HZD)</span>
+                  <span class="mg-year mono"> · ’25</span>
+                </div>
+                <div class="mg-d mono">1,222 pieces of dignified giraffe-shaped robotic dinosaur, the one from Horizon Zero Dawn, a 10/10 game I will defend in any room</div>
+              </div>
+            </div>
+            <svg width="14" height="14" viewBox="0 0 20 20" style="display:inline-block;vertical-align:middle"><path d="M4 16 L16 4 M8 4 H16 V12" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="square"/></svg>
+          </li>
+        </ul>
+      </article>
+    </div>
+
+    </div><!-- /grid-col-right -->
+
+  </section>
+
+  <!-- ─── Stats bar ────────────────────────────────────────── -->
+  <div class="statsbar">
+    <div class="stat"><div class="stat-n display">2026</div><div class="stat-l mono">Grad year</div></div>
+    <div class="stat"><div class="stat-n display">05</div><div class="stat-l mono">Years in</div></div>
+    <div class="stat"><div class="stat-n display">04</div><div class="stat-l mono">Languages</div></div>
+    <div class="stat"><div class="stat-n display">100K+</div><div class="stat-l mono">Social views</div></div>
+    <div class="stat"><div class="stat-n display">89</div><div class="stat-l mono">LEGO sets</div></div>
+    <div class="stat"><div class="stat-n display">∞</div><div class="stat-l mono">Drafts</div></div>
+  </div>
+
+  <!-- ─── Bottom ticker ────────────────────────────────────── -->
+  <div class="tk-wrap tk-ink"><div class="tk-track" data-ticker="bottom" data-speed="48"></div></div>
+
+  <!-- ─── Colophon ─────────────────────────────────────────── -->
+  <footer class="colo">
+    <div class="colo-l">
+      <div class="display colo-mark">END · OF · ISSUE №01</div>
+      <div class="mono colo-meta">SET IN BRICOLAGE, INSTRUMENT, JETBRAINS MONO · PRINTED ON THE OPEN WEB</div>
+    </div>
+    <div class="colo-r">
+      <span class="chip ink">↑ BACK TO TOP</span>
+      <span class="chip">SUBSCRIBE</span>
+      <span class="chip acid">SAY HI ↗</span>
+    </div>
+  </footer>
+
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
