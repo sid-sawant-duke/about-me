@@ -386,3 +386,128 @@ body {
 .colo-mark { font-size: 48px; letter-spacing: -0.04em; }
 .colo-meta { font-size: 11px; letter-spacing: 0.05em; margin-top: 6px; opacity: 0.75; }
 .colo-r { display: flex; gap: 8px; }
+
+/* ─── Responsive ───────────────────────────────────────────── */
+
+/* Tablet & narrower desktop: keep the 2-column layout but let the
+   biggest type shrink with the viewport so nothing overflows. */
+@media (max-width: 1100px) {
+  .mast-name      { font-size: clamp(72px, 12vw, 168px); }
+  .story-num      { font-size: clamp(54px, 6vw, 76px); }
+  .story-title    { font-size: clamp(30px, 3.4vw, 44px); }
+  .kstat-num      { font-size: clamp(38px, 4.2vw, 56px); }
+  .stat-n         { font-size: clamp(34px, 4vw, 52px); }
+  .colo-mark      { font-size: clamp(28px, 3.5vw, 48px); }
+}
+
+/* Mobile: single-column stack, smaller everything. */
+@media (max-width: 768px) {
+  .page { padding: 14px 14px 40px; }
+  .page.density-regular { font-size: 14px; }
+
+  /* Masthead */
+  .mast-top { grid-template-columns: 1fr; gap: 10px; padding-bottom: 10px; }
+  .mast-right { flex-wrap: wrap; gap: 6px; }
+  .mast-right .mast-meta { white-space: normal; font-size: 10.5px; }
+  .mast-name-row { grid-template-columns: 1fr; gap: 18px; padding: 16px 0 12px; align-items: flex-start; }
+  .mast-name { font-size: clamp(44px, 16vw, 92px); line-height: 0.86; }
+  .mast-kicker { font-size: 11px; padding-bottom: 6px; }
+  .mast-tag { padding-top: 8px; font-size: 11px; }
+  .mast-logo { justify-content: flex-start; }
+  .mast-logo svg { width: 104px; height: 104px; }
+
+  /* Tickers */
+  .tk-track { font-size: 11px; padding: 9px 0; gap: 28px; }
+
+  /* Hero */
+  .hero { grid-template-columns: 1fr; gap: 20px; padding: 18px 0 8px; }
+  .hero-photo { box-shadow: 5px 5px 0 var(--ink); }
+  .hero-text { padding-top: 0; gap: 16px; }
+  .hero-kicker { gap: 8px; flex-wrap: wrap; }
+  .hero-readtime { font-size: 10.5px; }
+  .hero-headline { font-size: clamp(32px, 8vw, 52px); line-height: 0.94; }
+  .hl-2 { padding: 0 2px; }
+  .hl-mark { box-shadow: 3px 3px 0 var(--ink); padding: 0 4px; }
+  .hero-meta-row { flex-direction: column; align-items: flex-start; gap: 14px; }
+  .hero-byline { font-size: 11px; }
+  .hero-socials { gap: 6px; flex-wrap: wrap; }
+  .hero-also { font-size: 13.5px; padding-top: 12px; margin-top: 12px; }
+  .hero-caption { font-size: 9.5px; padding: 5px 8px; }
+
+  /* Sticker badges — shrink to fit the smaller photo */
+  .sticker { box-shadow: 2px 2px 0 var(--ink); border-width: 2px; }
+  .hero-photo > .sticker:nth-of-type(1) {
+    width: 64px !important; height: 64px !important;
+    transform: translate(-6px, -6px) rotate(-9deg) !important;
+  }
+  .hero-photo > .sticker:nth-of-type(2) {
+    width: 60px !important; height: 60px !important;
+    transform: translate(6px, 6px) rotate(6deg) !important;
+    bottom: 8px !important; left: -8px !important;
+  }
+  .sticker .st-line { font-size: 8px; }
+  .sticker .st-line.st-big { font-size: 18px; }
+
+  /* Band rule */
+  .band-meta { flex-wrap: wrap; gap: 6px; font-size: 10px; }
+
+  /* Story grid → single column. Reset the desktop fill-to-bottom flexing
+     so each card sizes to its own content. */
+  .grid { grid-template-columns: 1fr; column-gap: 0; row-gap: 14px; }
+  .grid-col-left, .grid-col-right { gap: 14px; }
+  .grid-col > .g-col:last-child,
+  .grid-col > .g-col:last-child > .story { flex: 0 1 auto; }
+  .story-index .idx-list { flex: 0 1 auto; justify-content: flex-start; gap: 14px; }
+
+  /* Story cards */
+  .story { padding: 18px 16px 16px; min-height: 0; box-shadow: 4px 4px 0 var(--ink); }
+  .story:hover { transform: none; box-shadow: 4px 4px 0 var(--ink); }
+  .hero-photo:hover { transform: none; box-shadow: 5px 5px 0 var(--ink); }
+  .story-hd { padding-bottom: 6px; }
+  .story-num { font-size: 52px; margin-top: 0; }
+  .story-title { font-size: 28px; line-height: 0.96; margin: 4px 0 12px; }
+  .story-sub { font-size: 11.5px; padding-bottom: 10px; margin-bottom: 12px; }
+  .story-cols { grid-template-columns: 1fr; gap: 12px; font-size: 13.5px; line-height: 1.55; }
+  .dropcap { font-size: 44px; }
+  .story-feature { min-height: 0; }
+  .story-foot { font-size: 10.5px; gap: 8px; flex-wrap: wrap; padding-top: 12px; }
+
+  /* Cover */
+  .story-cover { padding: 18px 16px; }
+  .cover-keystats { gap: 8px; padding: 12px 0; margin: 14px 0 8px; }
+  .kstat-num { font-size: 36px; }
+  .kstat-lbl { font-size: 9px; letter-spacing: 0.06em; }
+
+  /* Index */
+  .story-index { padding: 18px 16px; }
+  .story-index .story-title { margin: 4px 0 14px; }
+  .idx-list { gap: 12px; }
+  .idx-row { padding-bottom: 10px; }
+  .idx-t { font-size: 19px; }
+  .idx-d { font-size: 11.5px; }
+  .idx-p { font-size: 11px; }
+  .idx-tag { font-size: 9px; padding: 2px 5px; }
+
+  /* Marginalia */
+  .mg-row { padding: 11px 12px; }
+  .mg-list { gap: 12px; }
+  .mg-t { font-size: 15px; }
+  .mg-d { font-size: 10.5px; }
+  .mg-n { font-size: 26px; min-width: 36px; }
+
+  /* Stats bar — 3 columns × 2 rows on mobile */
+  .statsbar { grid-template-columns: repeat(3, 1fr); }
+  .stat { padding: 14px 12px; border-right: 2px solid var(--ink); }
+  .stat:nth-child(3n) { border-right: none; }
+  .stat:nth-child(n+4) { border-top: 2px solid var(--ink); }
+  .stat:nth-child(2n) { background: var(--paper-2); }
+  .stat:nth-child(2n+1) { background: var(--paper-3); }
+  .stat-n { font-size: 34px; }
+  .stat-l { font-size: 9.5px; }
+
+  /* Colophon */
+  .colo { flex-direction: column; align-items: flex-start; gap: 14px; padding-top: 16px; }
+  .colo-mark { font-size: 28px; }
+  .colo-meta { font-size: 10px; }
+  .colo-r { flex-wrap: wrap; gap: 6px; }
+}
