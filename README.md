@@ -1,2 +1,2 @@
 # about-me
-A website that tells a person more than my resume
+you will get a chance to learn more about me as a person
