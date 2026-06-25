@@ -65,3 +65,4 @@ function updateStamps() {
 
 updateStamps();
 setInterval(updateStamps, 60000);
+

@@ -43,8 +43,9 @@ body {
 }
 
 /* ─── Page shell ─────────────────────────────────────────── */
-.page { max-width: 1440px; margin: 0 auto; padding: 22px 28px 60px; padding-top: 18px; }
+.page { max-width: 1440px; margin: 0 auto; padding: 22px 28px 60px; padding-top: 18px; animation: page-fadein 3s ease both; }
 .page.density-regular { font-size: 15px; }
+@keyframes page-fadein { from { opacity: 0; } to { opacity: 1; } }
 
 /* ─── Sticker / badge / chip primitives ──────────────────── */
 .chip {
